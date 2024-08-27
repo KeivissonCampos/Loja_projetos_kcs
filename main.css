@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+/* -------------------> header */
+
+header{
+    background-color: #333;
+    position: sticky;
+    top: 0;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.container-header ul{
+    display: flex;
+    gap: 20px;
+}
+
+.container-header li {
+    list-style: none;
+}
+
+.container-header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-header a:hover{
+    text-decoration: underline;
+}
+
+.info-loja{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+}
+
+.text-sobre{
+    flex: 1;
+}
+
+/* -------------------> Main */
+
+main{
+    margin: 20px 0;
+}
+
+hr{
+    margin: 10px 0px 30px 0;
+}
+
+.section-1,
+.section-2{
+    padding: 30px 0;
+}
+
+.produtos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.produtos section{
+    width: 24%;
+}
+
+.produtos h2,
+.produtos p{
+    margin: 20px 0px 20px 0;
+}
+
+.produtos img{
+    width: 100%;
+}
+
+.produtos input{
+    width: 100%;
+    height: 40px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: #333;
+}
+
+.produtos input:hover{
+    border: 2px solid #333;
+    color: #333;
+    background-color: #fff;
+}
+
+/* -------------------> Footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.footer-section p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.social-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Layout Tablet (de 641ps até 1023px) */
+
+@media screen and (max-width: 1023px) {
+    .container{
+        max-width: 640px;
+    }
+    
+    .info-loja img{
+        width: 100%;
+    }
+
+    .produtos section{
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 640px){
+    header{
+        position: static;
+    }
+    .container-header ul{
+        display: block;
+    }
+    .container-header li{
+        margin: 15px 0px;
+    }
+    .container{
+        padding: 30px;
+    }
+    .produtos section{
+        width: 100%;
+    }
+    .footer-container {
+        display: block;
+    }
+    .footer-section {
+        margin: 20px 0px;
+    }
+}
