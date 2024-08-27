@@ -26,6 +26,15 @@ header{
     padding: 10px 0;
 }
 
+.logo{
+    color: #39FF14;
+    text-align: center;
+}
+.logo p{
+    font-size: 14px;
+    color: #fff;
+}
+
 .container-header ul{
     display: flex;
     gap: 20px;
@@ -48,6 +57,10 @@ header{
     flex-wrap: wrap;
     display: flex;
     gap: 20px;
+}
+
+.info-loja img{
+    width: 35%;
 }
 
 .text-sobre{
@@ -77,6 +90,10 @@ hr{
 
 .produtos section{
     width: 24%;
+}
+
+.produtos h2{
+    font-size: 18px;
 }
 
 .produtos h2,
